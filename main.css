@@ -1,5 +1,7 @@
 :root {
+    --Black-900: black;
     --Black-700: #282828;
+    --Black-400: #9D9FA1;
     --Black-300: #BDBDBD;
     --Black-100: #F2F2F2;
     --White: white;
@@ -20,6 +22,10 @@
     margin-left: 15.9% !important;
 }
 
+.offset-05 {
+    margin-left: 6.9%;
+}
+
 .accordion .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
 !important;
@@ -29,7 +35,6 @@
     height: 24px;
 }
 
-
 .accordion .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
 !important;
@@ -37,8 +42,9 @@
 }
 
 /*end custom classes*/
+
 body {
-    background-color: #000000 !important;
+    background-color: var(--Black-900) !important;
 }
 
 /*navbar section*/
@@ -179,13 +185,13 @@ body {
 /*end main section*/
 
 /*start our services*/
-.our-services .container .row .arrow-button, .recent-works .container .row .arrow-button {
+.our-services .container .row .arrow-button, .recent-works .container .row .arrow-button, .team .container .row .arrow-button {
     display: flex;
     align-items: center;
     padding: 24px 0;
 }
 
-.our-services .container .row .arrow-button h2, .recent-works .container .row .arrow-button h2 {
+.our-services .container .row .arrow-button h2, .recent-works .container .row .arrow-button h2, .team .container .row .arrow-button h2 {
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -275,7 +281,7 @@ body {
     /*padding: 20px 20px;*/
 }
 
-.recent-works .container .row .list-works .full-button {
+.recent-works .container .row .list-works .full-button, .team .container .row .full-button {
     width: 100%;
     border-radius: 39px;
     border: 2px solid var(--Black-700, #282828);
@@ -288,7 +294,7 @@ body {
     align-self: stretch;
 }
 
-.recent-works .container .row .list-works .full-button p {
+.recent-works .container .row .list-works .full-button p, .team .container .row .full-button p {
     color: var(--Black-300, #BDBDBD);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -303,3 +309,68 @@ body {
 }
 
 /*recent works end*/
+
+/*start our team*/
+
+.team .container .row .team-paragraph p {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading/04 */
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px; /* 109.524% */
+    letter-spacing: -2px;
+}
+
+.team .container .row .card {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+
+    border-radius: 24px;
+    border: 2px solid var(--Black-700, #282828);
+}
+
+.team .container .row .card .card-header {
+    padding: 0;
+    background-color: black;
+    border-radius: 24px 24px 0 0;
+}
+
+.team .container .row .card .card-header img {
+    width: 302px;
+    border-radius: 24px 24px 0 0;
+}
+
+.team .container .row .card .card-body h5 {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/18px/Semibold */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+    align-self: stretch;
+}
+
+.team .container .row .card .card-body h6 {
+    color: var(--Black-400, #9D9FA1);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/16px/Semibold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 162.5% */
+}
+
+/*end our team*/
