@@ -631,7 +631,7 @@ body {
 /*end footer-sec*/
 
 /*start portfolio.html*/
-#portfolio .recent-works .container .row .second-title {
+#portfolio .recent-works .container .row .second-title, #contact .recent-works .container .row .second-title {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -641,7 +641,7 @@ body {
     border: 2px solid var(--Black-700, #282828);
 }
 
-#portfolio .recent-works .container .row .second-title .content-1 {
+#portfolio .recent-works .container .row .second-title .content-1, #contact .recent-works .container .row .second-title .content-1 {
     display: flex;
     padding: 39px 80px;
     justify-content: center;
@@ -652,7 +652,7 @@ body {
     border-right: 2px solid var(--Black-700, #282828);
 }
 
-#portfolio .recent-works .container .row .second-title .content-1 h1 {
+#portfolio .recent-works .container .row .second-title .content-1 h1, #contact .recent-works .container .row .second-title .content-1 h1 {
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -665,7 +665,7 @@ body {
     letter-spacing: -2px;
 }
 
-#portfolio .recent-works .container .row .second-title .content-2 {
+#portfolio .recent-works .container .row .second-title .content-2, #contact .recent-works .container .row .second-title .content-2 {
     display: flex;
     padding: 24px 56px;
     flex-direction: column;
@@ -674,7 +674,7 @@ body {
     flex: 1 0 0;
 }
 
-#portfolio .recent-works .container .row .second-title .content-2 p {
+#portfolio .recent-works .container .row .second-title .content-2 p, #contact .recent-works .container .row .second-title .content-2 p {
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -1035,3 +1035,77 @@ body {
 }
 
 /*end about us page*/
+
+/*start contact page*/
+
+.contact .offices .container .row .locations {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px;
+}
+
+#contact .offices .container .row .locations > h1 {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading/04 */
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px; /* 109.524% */
+    letter-spacing: -2px;
+}
+
+#contact .offices .container .row .locations .row div h4 {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/18px/Semibold */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+}
+
+#contact .offices .container .row .locations .row div p {
+    color: var(--Black-400, #9D9FA1);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/16px/Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+#contact .form .container .row div > h1 {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading/04 */
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px; /* 109.524% */
+    letter-spacing: -2px;
+    margin: 0 auto;
+}
+
+.form .container .row form {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.form .container .row form label {
+    color: red;
+}
+
+
+/*end contact page*/

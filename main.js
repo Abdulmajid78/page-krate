@@ -106,7 +106,7 @@ function drawNavbar() {
                                     <a href="#recent-works">Projects</a>
                                     <a href="about-us.html">About</a>
                                     <a href="team.html">Team</a>
-                                    <a href="">Contact</a>
+                                    <a href="contact.html">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +193,7 @@ function drawFooter() {
                             <a href="#recent-works">Projects</a>
                             <a href="about-us.html">About</a>
                             <a href="team.html">Team</a>
-                            <a href="">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </div>
                     </div>
                     <div class="col-02 col-6">
