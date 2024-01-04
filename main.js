@@ -56,6 +56,33 @@ const teamInfo = [
         job: 'Managing Director',
     },
 ]
+// const teamInfo2 = [
+//     {
+//         image: 'images/team/team7.png',
+//         fullName: 'Jason Schleifer',
+//         job: 'Managing Director',
+//     },
+//     {
+//         image: 'images/team/team8.png',
+//         fullName: 'Jason Schleifer',
+//         job: 'Managing Director',
+//     },
+//     {
+//         image: 'images/team/team9.png',
+//         fullName: 'Jason Schleifer',
+//         job: 'Managing Director',
+//     },
+//     {
+//         image: 'images/team/team10.png',
+//         fullName: 'Jason Schleifer',
+//         job: 'Managing Director',
+//     },
+//     {
+//         image: 'images/team/team11.png',
+//         fullName: 'Jason Schleifer',
+//         job: 'Managing Director',
+//     }
+// ]
 
 
 let navbarSec = document.querySelector('body .nav-section')
@@ -78,7 +105,7 @@ function drawNavbar() {
                                 <div class="link-items">
                                     <a href="#recent-works">Projects</a>
                                     <a href="about-us.html">About</a>
-                                    <a href="">Team</a>
+                                    <a href="team.html">Team</a>
                                     <a href="">Contact</a>
                                 </div>
                             </div>
@@ -165,7 +192,7 @@ function drawFooter() {
                         <div class="links">
                             <a href="#recent-works">Projects</a>
                             <a href="about-us.html">About</a>
-                            <a href="">Team</a>
+                            <a href="team.html">Team</a>
                             <a href="">Contact</a>
                         </div>
                     </div>
@@ -244,7 +271,6 @@ drawFooter()
 
 let portfolio = document.querySelector('#portfolio .list-works .row')
 let members = document.querySelector('.team .members')
-console.log(members)
 
 function drawPortfolio() {
     if (portfolio !== null) {
@@ -276,7 +302,43 @@ function drawPortfolio() {
 
 drawPortfolio()
 
+// (window.location.pathname === '/page-krate/team.html')
+
 function drawMembers() {
+    const isTeamPage = window.location.pathname === '/page-krate/team.html';
+
+    if (isTeamPage) {
+        teamInfo.push(
+            {
+                image: 'images/team/team7.png',
+                fullName: 'Jason Schleifer',
+                job: 'Managing Director',
+            },
+            {
+                image: 'images/team/team8.png',
+                fullName: 'Jason Schleifer',
+                job: 'Managing Director',
+            },
+            {
+                image: 'images/team/team9.png',
+                fullName: 'Jason Schleifer',
+                job: 'Managing Director',
+            },
+            {
+                image: 'images/team/team10.png',
+                fullName: 'Jason Schleifer',
+                job: 'Managing Director',
+            },
+            {
+                image: 'images/team/team11.png',
+                fullName: 'Jason Schleifer',
+                job: 'Managing Director',
+            }
+        );
+    }
+
+    members.innerHTML += '';
+
     teamInfo.forEach((item) => {
         members.innerHTML += `
     <div class="col-xl-3 mb-3 pb-2">
@@ -295,4 +357,5 @@ function drawMembers() {
 }
 
 drawMembers()
+
 
