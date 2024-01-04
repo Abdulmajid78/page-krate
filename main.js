@@ -24,6 +24,38 @@ const portfolioFiles = [
         linkUrl: 'portfolio-detail.html'
     },
 ]
+const teamInfo = [
+    {
+        image: 'images/team/team1.png',
+        fullName: 'Jocelyn Schleifer',
+        job: 'Managing Director',
+    },
+    {
+        image: 'images/team/team2.png',
+        fullName: 'Jocelyn Schleifer',
+        job: 'Managing Director',
+    },
+    {
+        image: 'images/team/team3.png',
+        fullName: 'Jocelyn Schleifer',
+        job: 'Managing Director',
+    },
+    {
+        image: 'images/team/team4.png',
+        fullName: 'Jocelyn Schleifer',
+        job: 'Managing Director',
+    },
+    {
+        image: 'images/team/team5.png',
+        fullName: 'Jocelyn Schleifer',
+        job: 'Managing Director',
+    },
+    {
+        image: 'images/team/team6.png',
+        fullName: 'Jocelyn Schleifer',
+        job: 'Managing Director',
+    },
+]
 
 
 let navbarSec = document.querySelector('body .nav-section')
@@ -44,8 +76,8 @@ function drawNavbar() {
                         <div class="col-01 col-10">
                             <div class="links">
                                 <div class="link-items">
-                                    <a href="portfolio.html">Projects</a>
-                                    <a href="">About</a>
+                                    <a href="#recent-works">Projects</a>
+                                    <a href="about-us.html">About</a>
                                     <a href="">Team</a>
                                     <a href="">Contact</a>
                                 </div>
@@ -123,20 +155,22 @@ function drawFooter() {
     <div class="container">
         <div class="row">
             <div class="col-3 logo">
+            <a href="index.html">
                 <img src="images/branding.png" alt="">
+            </a>
             </div>
             <div class="col-9 menu p-0">
                 <div class="menu-upper col-12 d-flex">
                     <div class="col-01 col-6">
                         <div class="links">
-                            <a href="">Projects</a>
-                            <a href="">About</a>
+                            <a href="#recent-works">Projects</a>
+                            <a href="about-us.html">About</a>
                             <a href="">Team</a>
                             <a href="">Contact</a>
                         </div>
                     </div>
                     <div class="col-02 col-6">
-                        <a href="">hello@clonify.io</a>
+                        <a href="mailto:abduaij@mail.com">hello@clonify.io</a>
                     </div>
                 </div>
                 <div class="menu-lower col-12">
@@ -209,10 +243,13 @@ drawFooter()
 
 
 let portfolio = document.querySelector('#portfolio .list-works .row')
+let members = document.querySelector('.team .members')
+console.log(members)
 
 function drawPortfolio() {
-    for (let i = 0; i < portfolioFiles.length; i++) {
-        portfolio.innerHTML += `
+    if (portfolio !== null) {
+        for (let i = 0; i < portfolioFiles.length; i++) {
+            portfolio.innerHTML += `
                         <div class="col-xl-12 mb-3 px-0 mx-0 pb-2">
                             <div class="card">
                                 <img src="${portfolioFiles[i].image}" alt="">
@@ -231,9 +268,31 @@ function drawPortfolio() {
                             </div>
                         </div>
     `
+        }
+    } else {
+        console.error('portfolio element not found')
     }
-
 }
 
 drawPortfolio()
+
+function drawMembers() {
+    teamInfo.forEach((item) => {
+        members.innerHTML += `
+    <div class="col-xl-3 mb-3 pb-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="${item.image}" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>${item.fullName}</h5>
+                            <h6>${item.job}</h6>
+                        </div>
+                    </div>
+                </div>
+    `
+    })
+}
+
+drawMembers()
 
