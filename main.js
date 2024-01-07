@@ -143,93 +143,31 @@ let footer = document.querySelector('body .footer-sec')
 // drawing sections
 function drawNavbar() {
     navbarSec.innerHTML = `
-                <div class="container">
-            <div class="row">
-                <div class="col-2 logo">
+                    <div class="container">
+        <div class="row">
+            <div class="col-3 col-xl-2 logo">
                 <a href="index.html">
                     <img src="images/logo.png" alt="">
                 </a>
-                </div>
-                <div class="col-10 menu p-0">
-                    <div class="menu-upper col-12">
-                        <div class="col-01 col-10">
-                            <div class="links">
-                                <div class="link-items">
-                                    <a href="#recent-works">Projects</a>
-                                    <a href="about-us.html">About</a>
-                                    <a href="team.html">Team</a>
-                                    <a href="contact.html">Contact</a>
-                                </div>
+            </div>
+            <div class="col-10 menu p-0">
+                <div class="menu-upper col-12">
+                    <div class="col-01 col-10">
+                        <div class="links">
+                            <div class="link-items">
+                                <a href="#recent-works">Projects</a>
+                                <a href="about-us.html">About</a>
+                                <a href="team.html">Team</a>
+                                <a href="contact.html">Contact</a>
                             </div>
                         </div>
-                        <div class="col-02 col-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="190" height="56" viewBox="0 0 232 56"
-                                 fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M80 20H152V20.7895H80V20ZM80 27.1052H152V27.8948H80V27.1052ZM152 34.2105H80V35H152V34.2105Z"
-                                      fill="#BDBDBD"/>
-                            </svg>
-                        </div>
                     </div>
-                    <div class="menu-lower col-12">
-                        <div class="col-01 col-6">
-                            <a href="blog.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
-                                     fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M12.541 2.75368C11.7795 2.75368 11.0492 3.05619 10.5107 3.59467L9.76069 4.34467L2.63569 11.4697C2.49503 11.6103 2.41602 11.8011 2.41602 12V15C2.41602 15.4142 2.7518 15.75 3.16602 15.75H6.16602C6.36493 15.75 6.55569 15.671 6.69635 15.5303L13.82 8.40666C13.8205 8.40622 13.8209 8.40578 13.8213 8.40533C13.8218 8.40489 13.8222 8.40444 13.8227 8.40399L14.5713 7.65533C15.1098 7.11685 15.4123 6.38652 15.4123 5.625C15.4123 4.86348 15.1098 4.13315 14.5713 3.59467C14.0329 3.05619 13.3025 2.75368 12.541 2.75368ZM13.291 6.81434L13.5107 6.59467C13.7679 6.3375 13.9123 5.9887 13.9123 5.625C13.9123 5.2613 13.7679 4.9125 13.5107 4.65533C13.2535 4.39816 12.9047 4.25368 12.541 4.25368C12.1773 4.25368 11.8285 4.39816 11.5713 4.65533L11.3517 4.875L13.291 6.81434ZM10.291 5.93566L3.91602 12.3107V14.25H5.85535L12.2304 7.875L10.291 5.93566Z"
-                                          fill="#D0D5DD"/>
-                                </svg>
-                                Blog
-                            </a>
-                        </div>
-                        <div class="col-02 col-6">
-                            <a href="terms.html">
-                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                     viewBox="0 0 18 18"
-                                     fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M12.3984 2.25C12.3984 1.83579 12.0627 1.5 11.6484 1.5C11.2342 1.5 10.8984 1.83579 10.8984 2.25V3H6.39844V2.25C6.39844 1.83579 6.06265 1.5 5.64844 1.5C5.23422 1.5 4.89844 1.83579 4.89844 2.25V3H4.14844C2.9058 3 1.89844 4.00736 1.89844 5.25V8.25V14.25C1.89844 15.4926 2.9058 16.5 4.14844 16.5H13.1484C14.3911 16.5 15.3984 15.4926 15.3984 14.25V8.25V5.25C15.3984 4.00736 14.3911 3 13.1484 3H12.3984V2.25ZM13.8984 7.5V5.25C13.8984 4.83579 13.5627 4.5 13.1484 4.5H12.3984V5.25C12.3984 5.66421 12.0627 6 11.6484 6C11.2342 6 10.8984 5.66421 10.8984 5.25V4.5H6.39844V5.25C6.39844 5.66421 6.06265 6 5.64844 6C5.23422 6 4.89844 5.66421 4.89844 5.25V4.5H4.14844C3.73422 4.5 3.39844 4.83579 3.39844 5.25V7.5H13.8984ZM3.39844 9H13.8984V14.25C13.8984 14.6642 13.5627 15 13.1484 15H4.14844C3.73422 15 3.39844 14.6642 3.39844 14.25V9Z"
-                                          fill="#BDBDBD"/>
-                                </svg>
-                                Get in touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    `
-
-}
-
-drawNavbar()
-
-function drawFooter() {
-    footer.innerHTML = `
-    <div class="container">
-        <div class="row">
-            <div class="col-3 logo">
-            <a href="index.html">
-                <img src="images/branding.png" alt="">
-            </a>
-            </div>
-            <div class="col-9 menu p-0">
-                <div class="menu-upper col-12 d-flex">
-                    <div class="col-01 col-6">
-                        <div class="links">
-                            <a href="#recent-works">Projects</a>
-                            <a href="about-us.html">About</a>
-                            <a href="team.html">Team</a>
-                            <a href="contact.html">Contact</a>
-                        </div>
-                    </div>
-                    <div class="col-02 col-6">
-                        <a href="mailto:abduaij@mail.com">hello@clonify.io</a>
+                    <div class="col-02 col-2">
+                        <img src="images/hamb.png" alt="">
                     </div>
                 </div>
                 <div class="menu-lower col-12">
-                    <div class="col-01 col-4">
+                    <div class="col-01 col-6">
                         <a href="blog.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
                                  fill="none">
@@ -240,7 +178,64 @@ function drawFooter() {
                             Blog
                         </a>
                     </div>
-                    <div class="col-02 col-4">
+                    <div class="col-02 col-6">
+                        <a href="terms.html">
+                            <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                 viewBox="0 0 18 18"
+                                 fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12.3984 2.25C12.3984 1.83579 12.0627 1.5 11.6484 1.5C11.2342 1.5 10.8984 1.83579 10.8984 2.25V3H6.39844V2.25C6.39844 1.83579 6.06265 1.5 5.64844 1.5C5.23422 1.5 4.89844 1.83579 4.89844 2.25V3H4.14844C2.9058 3 1.89844 4.00736 1.89844 5.25V8.25V14.25C1.89844 15.4926 2.9058 16.5 4.14844 16.5H13.1484C14.3911 16.5 15.3984 15.4926 15.3984 14.25V8.25V5.25C15.3984 4.00736 14.3911 3 13.1484 3H12.3984V2.25ZM13.8984 7.5V5.25C13.8984 4.83579 13.5627 4.5 13.1484 4.5H12.3984V5.25C12.3984 5.66421 12.0627 6 11.6484 6C11.2342 6 10.8984 5.66421 10.8984 5.25V4.5H6.39844V5.25C6.39844 5.66421 6.06265 6 5.64844 6C5.23422 6 4.89844 5.66421 4.89844 5.25V4.5H4.14844C3.73422 4.5 3.39844 4.83579 3.39844 5.25V7.5H13.8984ZM3.39844 9H13.8984V14.25C13.8984 14.6642 13.5627 15 13.1484 15H4.14844C3.73422 15 3.39844 14.6642 3.39844 14.25V9Z"
+                                      fill="#BDBDBD"/>
+                            </svg>
+                            Get in touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    `
+
+}
+
+drawNavbar()
+
+function drawFooter() {
+    footer.innerHTML = `
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-12 logo">
+            <a href="index.html">
+                <img src="images/branding.png" alt="">
+            </a>
+            </div>
+            <div class="col-xl-9 col-12 menu p-0">
+                <div class="menu-upper col-xl-12">
+                    <div class="col-01 col-xl-6 col-12">
+                        <div class="links">
+                            <a href="#recent-works">Projects</a>
+                            <a href="about-us.html">About</a>
+                            <a href="team.html">Team</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-02 col-xl-6 col-12">
+                        <a href="mailto:abduaij@mail.com">hello@clonify.io</a>
+                    </div>
+                </div>
+                <div class="menu-lower col-xl-12">
+                    <div class="col-01 col-xl-4 col-12">
+                        <a href="blog.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+                                 fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12.541 2.75368C11.7795 2.75368 11.0492 3.05619 10.5107 3.59467L9.76069 4.34467L2.63569 11.4697C2.49503 11.6103 2.41602 11.8011 2.41602 12V15C2.41602 15.4142 2.7518 15.75 3.16602 15.75H6.16602C6.36493 15.75 6.55569 15.671 6.69635 15.5303L13.82 8.40666C13.8205 8.40622 13.8209 8.40578 13.8213 8.40533C13.8218 8.40489 13.8222 8.40444 13.8227 8.40399L14.5713 7.65533C15.1098 7.11685 15.4123 6.38652 15.4123 5.625C15.4123 4.86348 15.1098 4.13315 14.5713 3.59467C14.0329 3.05619 13.3025 2.75368 12.541 2.75368ZM13.291 6.81434L13.5107 6.59467C13.7679 6.3375 13.9123 5.9887 13.9123 5.625C13.9123 5.2613 13.7679 4.9125 13.5107 4.65533C13.2535 4.39816 12.9047 4.25368 12.541 4.25368C12.1773 4.25368 11.8285 4.39816 11.5713 4.65533L11.3517 4.875L13.291 6.81434ZM10.291 5.93566L3.91602 12.3107V14.25H5.85535L12.2304 7.875L10.291 5.93566Z"
+                                      fill="#D0D5DD"/>
+                            </svg>
+                            Blog
+                        </a>
+                    </div>
+                    <div class="col-02 col-xl-4 col-12">
                         <div class="socials">
                             <a href="">
                                 <div class="icon-box">
@@ -284,7 +279,7 @@ function drawFooter() {
                             </a> <!--email-->
                         </div>
                     </div>
-                    <div class="col-03 col-4">
+                    <div class="col-03 col-xl-4 col-12">
                         <h1>© 2024 Abdulmajid Design</h1>
                     </div>
                 </div>
@@ -400,7 +395,7 @@ function drawMembers() {
                 <div class="col-xl-3 mb-3 pb-2">
                     <div class="card">
                         <div class="card-header">
-                            <img src="${item.image}" alt="">
+                            <img class="card-img-top" src="${item.image}" alt="">
                         </div>
                         <div class="card-body">
                             <h5>${item.fullName}</h5>
