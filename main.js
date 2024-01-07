@@ -184,7 +184,7 @@ function drawNavbar() {
                             </a>
                         </div>
                         <div class="col-02 col-6">
-                            <a href="">
+                            <a href="terms.html">
                                 <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                      viewBox="0 0 18 18"
                                      fill="none">
@@ -204,30 +204,6 @@ function drawNavbar() {
 }
 
 drawNavbar()
-
-function drawCTA() {
-    cta.innerHTML = `
-    <div class="container">
-            <div class="row">
-                <div class="background">
-                    <h1>Have an idea? Let’s talk.</h1>
-                    <p>Visually attractive design from concept to final result. We create solutions that are bold and
-                        forward-looking.</p>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M14.1934 2.5C14.1934 2.08579 13.8576 1.75 13.4434 1.75C13.0291 1.75 12.6934 2.08579 12.6934 2.5V3.41667H7.52669V2.5C7.52669 2.08579 7.19091 1.75 6.77669 1.75C6.36248 1.75 6.02669 2.08579 6.02669 2.5V3.41667H5.11003C3.77534 3.41667 2.69336 4.49865 2.69336 5.83333V9.16667V15.8333C2.69336 17.168 3.77534 18.25 5.11003 18.25H15.11C16.4447 18.25 17.5267 17.168 17.5267 15.8333V9.16667V5.83333C17.5267 4.49865 16.4447 3.41667 15.11 3.41667H14.1934V2.5ZM16.0267 8.41667V5.83333C16.0267 5.32707 15.6163 4.91667 15.11 4.91667H14.1934V5.83333C14.1934 6.24755 13.8576 6.58333 13.4434 6.58333C13.0291 6.58333 12.6934 6.24755 12.6934 5.83333V4.91667H7.52669V5.83333C7.52669 6.24755 7.19091 6.58333 6.77669 6.58333C6.36248 6.58333 6.02669 6.24755 6.02669 5.83333V4.91667H5.11003C4.60377 4.91667 4.19336 5.32707 4.19336 5.83333V8.41667H16.0267ZM4.19336 9.91667H16.0267V15.8333C16.0267 16.3396 15.6163 16.75 15.11 16.75H5.11003C4.60377 16.75 4.19336 16.3396 4.19336 15.8333V9.91667Z"
-                                  fill="#282828"/>
-                        </svg>
-                        Free Consultation
-                    </button>
-                </div>
-            </div>
-        </div>
-    `
-}
-
-drawCTA()
 
 function drawFooter() {
     footer.innerHTML = `
@@ -320,6 +296,31 @@ function drawFooter() {
 
 drawFooter()
 
+function drawCTA() {
+    cta.innerHTML += `
+    <div class="container">
+            <div class="row">
+                <div class="background">
+                    <h1>Have an idea? Let’s talk.</h1>
+                    <p>Visually attractive design from concept to final result. We create solutions that are bold and
+                        forward-looking.</p>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M14.1934 2.5C14.1934 2.08579 13.8576 1.75 13.4434 1.75C13.0291 1.75 12.6934 2.08579 12.6934 2.5V3.41667H7.52669V2.5C7.52669 2.08579 7.19091 1.75 6.77669 1.75C6.36248 1.75 6.02669 2.08579 6.02669 2.5V3.41667H5.11003C3.77534 3.41667 2.69336 4.49865 2.69336 5.83333V9.16667V15.8333C2.69336 17.168 3.77534 18.25 5.11003 18.25H15.11C16.4447 18.25 17.5267 17.168 17.5267 15.8333V9.16667V5.83333C17.5267 4.49865 16.4447 3.41667 15.11 3.41667H14.1934V2.5ZM16.0267 8.41667V5.83333C16.0267 5.32707 15.6163 4.91667 15.11 4.91667H14.1934V5.83333C14.1934 6.24755 13.8576 6.58333 13.4434 6.58333C13.0291 6.58333 12.6934 6.24755 12.6934 5.83333V4.91667H7.52669V5.83333C7.52669 6.24755 7.19091 6.58333 6.77669 6.58333C6.36248 6.58333 6.02669 6.24755 6.02669 5.83333V4.91667H5.11003C4.60377 4.91667 4.19336 5.32707 4.19336 5.83333V8.41667H16.0267ZM4.19336 9.91667H16.0267V15.8333C16.0267 16.3396 15.6163 16.75 15.11 16.75H5.11003C4.60377 16.75 4.19336 16.3396 4.19336 15.8333V9.91667Z"
+                                  fill="#282828"/>
+                        </svg>
+                        Free Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    `
+}
+
+drawCTA()
+
+
 // drawing array items
 
 let portfolio = document.querySelector('#portfolio .list-works .row')
@@ -359,40 +360,40 @@ drawPortfolio()
 
 function drawMembers() {
     if (members !== null) {
-    const isTeamPage = window.location.pathname.includes('/team.html');
+        const isTeamPage = window.location.pathname.includes('/team.html');
 
-    if (isTeamPage) {
-        // buyoda tepada {teamInfo2 obj arrayim bor} ishlamaganiga shunaqa qilindi push bn
-        teamInfo.push(
-            {
-                image: 'images/team/team7.png',
-                fullName: 'Jason Schleifer',
-                job: 'Managing Director',
-            },
-            {
-                image: 'images/team/team8.png',
-                fullName: 'Jason Schleifer',
-                job: 'Managing Director',
-            },
-            {
-                image: 'images/team/team9.png',
-                fullName: 'Jason Schleifer',
-                job: 'Managing Director',
-            },
-            {
-                image: 'images/team/team10.png',
-                fullName: 'Jason Schleifer',
-                job: 'Managing Director',
-            },
-            {
-                image: 'images/team/team11.png',
-                fullName: 'Jason Schleifer',
-                job: 'Managing Director',
-            }
-        );
-    }
+        if (isTeamPage) {
+            // buyoda tepada {teamInfo2 obj arrayim bor} ishlamaganiga shunaqa qilindi push bn
+            teamInfo.push(
+                {
+                    image: 'images/team/team7.png',
+                    fullName: 'Jason Schleifer',
+                    job: 'Managing Director',
+                },
+                {
+                    image: 'images/team/team8.png',
+                    fullName: 'Jason Schleifer',
+                    job: 'Managing Director',
+                },
+                {
+                    image: 'images/team/team9.png',
+                    fullName: 'Jason Schleifer',
+                    job: 'Managing Director',
+                },
+                {
+                    image: 'images/team/team10.png',
+                    fullName: 'Jason Schleifer',
+                    job: 'Managing Director',
+                },
+                {
+                    image: 'images/team/team11.png',
+                    fullName: 'Jason Schleifer',
+                    job: 'Managing Director',
+                }
+            );
+        }
 
-    members.innerHTML += '';
+        members.innerHTML += '';
 
         teamInfo.forEach((item) => {
             members.innerHTML += `
@@ -418,8 +419,8 @@ drawMembers()
 
 function drawBlogs() {
     if (blogSec !== null) {
-    blogsArr.forEach((item) => {
-        blogSec.innerHTML += `
+        blogsArr.forEach((item) => {
+            blogSec.innerHTML += `
                 <div class="col-xl-6 mt-5">
                     <img src="${item.image}" alt="">
                     <p>${item.date}</p>
@@ -428,7 +429,7 @@ function drawBlogs() {
                     </div>
                 </div>
     `
-    })
+        })
     } else {
         console.error('blogs pageda emassiz malumotlarni bu yerga chaqirishni iloji yoq')
     }

@@ -6,6 +6,7 @@
     --Black-200: #DDD;
     --Black-100: #F2F2F2;
     --White: white;
+    --Blue-Black-200: #EAECF0;
 }
 
 * {
@@ -33,6 +34,11 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
 !important;
     color: white;
+}
+
+b {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 /*end custom classes*/
@@ -1339,3 +1345,83 @@ body {
 }
 
 /*end blog detail page*/
+
+/*start term page*/
+#terms .term-main .main-text {
+    display: flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-bottom: 1px solid var(--Black-700, #282828);
+}
+
+#terms .term-main .main-text h1 {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading/02 */
+    font-family: Inter;
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 73px; /* 115.873% */
+    letter-spacing: -2.5px;
+}
+
+#terms .term-main .main-text .content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+#terms .term-main .main-text .content span:first-child {
+    padding: 4px 16px;
+    border-radius: 100px;
+    border: 1px solid var(--Black-700, #282828);
+}
+
+#terms .term-main .main-text .content span {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    color: var(--Blue-Black-200, #EAECF0);
+}
+
+#terms .term-main .second-text {
+    margin-top: 25px;
+}
+
+#terms .term-main .second-text h2 {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading/05 */
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 117.647% */
+    letter-spacing: -1px;
+    margin: 30px 0 5px 0;
+}
+
+#terms .term-main .second-text p {
+    color: var(--Black-300, #BDBDBD);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/22px/Regular */
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 172.727% */
+}
+
+
+/*end term page*/
