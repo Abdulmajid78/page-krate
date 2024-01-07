@@ -431,3 +431,31 @@ function drawBlogs() {
 }
 
 drawBlogs()
+
+const mq = window.matchMedia("(min-width: 600px)");
+let hamburger = document.querySelector('.nav-section .menu-upper .col-02 img')
+let overlayCust = document.querySelector('.overlay-cust')
+let modalCust = document.querySelector('.modal-cust')
+let close = document.querySelector('.modal-cust h6')
+
+
+if (mq.matches) {
+
+} else {
+    hamburger.addEventListener('click', function () {
+        modalCust.classList.remove('hidden-cust')
+        overlayCust.classList.remove('hidden-cust')
+    })
+
+    close.addEventListener('click', function () {
+        modalCust.classList.add('hidden-cust')
+        overlayCust.classList.add('hidden-cust')
+    })
+
+    overlayCust.addEventListener('click', function () {
+        modalCust.classList.add('hidden-cust')
+        overlayCust.classList.add('hidden-cust')
+    })
+}
+
+
