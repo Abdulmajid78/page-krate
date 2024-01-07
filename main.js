@@ -24,6 +24,49 @@ const portfolioFiles = [
         linkUrl: 'portfolio-detail.html'
     },
 ]
+const blogsArr = [
+    {
+        image: 'images/blogs/blog1.png',
+        date: 'October 12, 2024',
+        title: 'How to create SVG-ready icon symbols in Sketch'
+    },
+    {
+        image: 'images/blogs/blog2.png',
+        date: 'October 12, 2024',
+        title: 'Cinema 4D Visual Explorations by David Milan'
+    },
+    {
+        image: 'images/blogs/blog3.png',
+        date: 'October 12, 2024',
+        title: 'Mental models for designers'
+    },
+    {
+        image: 'images/blogs/blog4.png',
+        date: 'October 12, 2024',
+        title: 'How We Keep Brand Consistency in Our Visual Language — A Design System for Illustrations'
+    },
+    {
+        image: 'images/blogs/blog5.png',
+        date: 'October 12, 2024',
+        title: 'Blueprint fidelity: between paper prototype and finished product'
+    },
+    {
+        image: 'images/blogs/blog6.png',
+        date: 'October 12, 2024',
+        title: 'Introducing: A brand new Dribbble'
+    },
+    {
+        image: 'images/blogs/blog7.png',
+        date: 'October 12, 2024',
+        title: 'Design critiques at Figma'
+    },
+    {
+        image: 'images/blogs/blog8.png',
+        date: 'October 12, 2024',
+        title: '20 psychological principles applied to product design'
+    },
+
+]
 const teamInfo = [
     {
         image: 'images/team/team1.png',
@@ -89,6 +132,7 @@ let navbarSec = document.querySelector('body .nav-section')
 let cta = document.querySelector('body .cta')
 let footer = document.querySelector('body .footer-sec')
 
+// drawing sections
 function drawNavbar() {
     navbarSec.innerHTML = `
                 <div class="container">
@@ -121,7 +165,7 @@ function drawNavbar() {
                     </div>
                     <div class="menu-lower col-12">
                         <div class="col-01 col-6">
-                            <a href="">
+                            <a href="blog.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
                                      fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -202,7 +246,7 @@ function drawFooter() {
                 </div>
                 <div class="menu-lower col-12">
                     <div class="col-01 col-4">
-                        <a href="">
+                        <a href="blog.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
                                  fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -268,9 +312,12 @@ function drawFooter() {
 
 drawFooter()
 
+// drawing array items
 
 let portfolio = document.querySelector('#portfolio .list-works .row')
 let members = document.querySelector('.team .members')
+let blogSec = document.querySelector('#blogs .blogs .row1')
+
 
 function drawPortfolio() {
     if (portfolio !== null) {
@@ -296,18 +343,18 @@ function drawPortfolio() {
     `
         }
     } else {
-        console.error('portfolio element not found')
+        console.error('portfolio funksiyasi bu pageda ishlatilinmagan')
     }
 }
 
 drawPortfolio()
 
-// (window.location.pathname === '/page-krate/team.html')
-
 function drawMembers() {
+    if (members !== null) {
     const isTeamPage = window.location.pathname.includes('/team.html');
 
     if (isTeamPage) {
+        // buyoda tepada {teamInfo2 obj arrayim bor} ishlamaganiga shunaqa qilindi push bn
         teamInfo.push(
             {
                 image: 'images/team/team7.png',
@@ -339,9 +386,9 @@ function drawMembers() {
 
     members.innerHTML += '';
 
-    teamInfo.forEach((item) => {
-        members.innerHTML += `
-    <div class="col-xl-3 mb-3 pb-2">
+        teamInfo.forEach((item) => {
+            members.innerHTML += `
+                <div class="col-xl-3 mb-3 pb-2">
                     <div class="card">
                         <div class="card-header">
                             <img src="${item.image}" alt="">
@@ -353,9 +400,30 @@ function drawMembers() {
                     </div>
                 </div>
     `
-    })
+        })
+    } else {
+        console.error('members funksiyasi bu yerda yoq! (ishlatilinmagan)')
+    }
 }
 
 drawMembers()
 
+function drawBlogs() {
+    if (blogSec !== null) {
+    blogsArr.forEach((item) => {
+        blogSec.innerHTML += `
+                <div class="col-xl-6 mt-5">
+                    <img src="${item.image}" alt="">
+                    <p>${item.date}</p>
+                    <div class="col-10">
+                        <h2>${item.title}</h2>
+                    </div>
+                </div>
+    `
+    })
+    } else {
+        console.error('blogs pageda emassiz malumotlarni bu yerga chaqirishni iloji yoq')
+    }
+}
 
+drawBlogs()

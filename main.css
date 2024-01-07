@@ -293,7 +293,7 @@ body {
     /*padding: 20px 20px;*/
 }
 
-.recent-works .container .row .list-works .full-button, .team .container .row .full-button {
+.recent-works .container .row .list-works .full-button, .team .container .row .full-button, #blogs .blogs .container .row .full-button {
     width: 100%;
     border-radius: 39px;
     border: 2px solid var(--Black-700, #282828);
@@ -306,11 +306,11 @@ body {
     align-self: stretch;
 }
 
-.recent-works .container .row .list-works .full-button:hover, .team .container .row .full-button:hover {
+.recent-works .container .row .list-works .full-button:hover, .team .container .row .full-button:hover, #blogs .blogs .container .row .full-button:hover {
     border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-.recent-works .container .row .list-works .full-button p, .team .container .row .full-button p {
+.recent-works .container .row .list-works .full-button p, .team .container .row .full-button p, #blogs .blogs .container .row .full-button p {
     color: var(--Black-300, #BDBDBD);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -321,10 +321,10 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 34px; /* 170% */
-    margin-bottom: 0;
+    margin: 0;
 }
 
-.recent-works .container .row .list-works .full-button p:hover, .team .container .row .full-button p:hover {
+.recent-works .container .row .list-works .full-button p:hover, .team .container .row .full-button p:hover, #blogs .blogs .container .row .full-button p:hover {
     color: white;
 }
 
@@ -631,7 +631,7 @@ body {
 /*end footer-sec*/
 
 /*start portfolio.html*/
-#portfolio .recent-works .container .row .second-title, #contact .recent-works .container .row .second-title {
+#portfolio .recent-works .container .row .second-title, #contact .recent-works .container .row .second-title, #blogs .recent-works .container .row .second-title {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -641,7 +641,7 @@ body {
     border: 2px solid var(--Black-700, #282828);
 }
 
-#portfolio .recent-works .container .row .second-title .content-1, #contact .recent-works .container .row .second-title .content-1 {
+#portfolio .recent-works .container .row .second-title .content-1, #contact .recent-works .container .row .second-title .content-1, #blogs .recent-works .container .row .second-title .content-1 {
     display: flex;
     padding: 39px 80px;
     justify-content: center;
@@ -652,7 +652,7 @@ body {
     border-right: 2px solid var(--Black-700, #282828);
 }
 
-#portfolio .recent-works .container .row .second-title .content-1 h1, #contact .recent-works .container .row .second-title .content-1 h1 {
+#portfolio .recent-works .container .row .second-title .content-1 h1, #contact .recent-works .container .row .second-title .content-1 h1, #blogs .recent-works .container .row .second-title .content-1 h1 {
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -665,7 +665,7 @@ body {
     letter-spacing: -2px;
 }
 
-#portfolio .recent-works .container .row .second-title .content-2, #contact .recent-works .container .row .second-title .content-2 {
+#portfolio .recent-works .container .row .second-title .content-2, #contact .recent-works .container .row .second-title .content-2, #blogs .recent-works .container .row .second-title .content-2 {
     display: flex;
     padding: 24px 56px;
     flex-direction: column;
@@ -674,7 +674,7 @@ body {
     flex: 1 0 0;
 }
 
-#portfolio .recent-works .container .row .second-title .content-2 p, #contact .recent-works .container .row .second-title .content-2 p {
+#portfolio .recent-works .container .row .second-title .content-2 p, #contact .recent-works .container .row .second-title .content-2 p, #blogs .recent-works .container .row .second-title .content-2 p {
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -1097,13 +1097,13 @@ body {
     margin: 0 auto;
 }
 
-.form .container .row form {
+#contact .form .container .row form {
     display: flex;
     align-items: center;
     justify-content: center
 }
 
-.form .container .row form input::placeholder {
+#contact .form .container .row form input::placeholder {
     color: var(--Black-400, #9D9FA1);
     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -1115,7 +1115,7 @@ body {
     line-height: 26px; /* 162.5% */
 }
 
-.form .container .row form input {
+#contact .form .container .row form input {
     display: flex;
     height: 52px;
     width: 100%;
@@ -1130,7 +1130,7 @@ body {
     border-bottom: 1px solid var(--Black-700, #282828);
 }
 
-.form .container .row form select {
+#contact .form .container .row form select {
     display: flex;
     height: 52px;
     width: 100%;
@@ -1145,7 +1145,7 @@ body {
     border-bottom: 1px solid var(--Black-700, #282828);
 }
 
-.form .container .row form textarea {
+#contact .form .container .row form textarea {
     display: flex;
     height: 52px;
     width: 100%;
@@ -1160,11 +1160,11 @@ body {
     border-bottom: 1px solid var(--Black-700, #282828);
 }
 
-.form .container .row form input:focus, .form .container .row form textarea:focus, .form .container .row form select:focus {
+#contact .form .container .row form input:focus, .form .container .row form textarea:focus, .form .container .row form select:focus {
     outline: none;
 }
 
-.form .container .row form button {
+#contact .form .container .row form button {
     width: 100%;
     padding: 12px 40px;
     background-color: white;
@@ -1174,7 +1174,7 @@ body {
     margin-bottom: 22px;
 }
 
-.form .container .row form p {
+#contact .form .container .row form p {
     color: var(--Black-400, #9D9FA1);
     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -1187,3 +1187,34 @@ body {
 }
 
 /*end contact page*/
+
+/*start blogs page*/
+
+#blogs .blogs .container .row div p {
+    color: var(--Black-400, #9D9FA1);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/16px/Semibold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 162.5% */
+
+    margin: 24px 0 8px 0;
+}
+
+#blogs .blogs .container .row div h2 {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading/06 */
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px; /* 121.429% */
+    letter-spacing: -0.6px;
+}
+
+/*end blogs page*/
