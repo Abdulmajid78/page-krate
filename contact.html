@@ -31,10 +31,10 @@
         </div>
     </section>
 
-    <section class="offices">
+    <section class="offices my-5">
         <div class="container">
             <div class="row">
-                <div class="office col-xl-7">
+                <div class="ps-0 office col-xl-7">
                     <img src="images/contact.png" alt="">
                 </div>
                 <div class="locations mt-5 col-xl-5">
@@ -97,32 +97,31 @@
                     <form class="my-5" style="" name="contactForm">
                         <div class="col-6 row">
                             <div class="col-6">
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
+                                <input type="text" placeholder="First name:" id="fname" name="fname"><br>
                             </div>
-                            <div class="col-6">
-                                <label for="lname">Last name:</label><br>
-                                <input type="text" id="lname" name="lname">
+                            <div class="col-6 mb-3">
+                                <input type="text" placeholder="Last name:" id="lname" name="lname">
                             </div>
 
-                            <div class="col-12">
-                                <label for="email">email:</label><br>
-                                <input type="text" id="email" name="email"><br>
+                            <div class="col-12 mb-3">
+                                <input type="text" placeholder="Email:" id="email" name="email"><br>
                             </div>
 
-                            <div class="col-12">
-                                <label for="department">Department:</label><br>
+                            <div class="col-12 mb-3">
                                 <select id="department" name="department">
-                                    <option value=""></option>
+                                    <option value="">Department</option>
                                     <option value="saab">Saab</option>
                                     <option value="opel">Opel</option>
                                     <option value="audi">Audi</option>
                                 </select>
                             </div>
 
-                            <div class="col-12">
-                                <label for="messages">Messages:</label><br>
-                                <textarea name="messages" id="messages"></textarea>
+                            <div class="col-12 mt-3">
+                                <textarea rows="29" placeholder="Messages" name="messages" id="messages"></textarea>
+                            </div>
+                            <div class="col-12 text-start mt-5">
+                                <button>Send message</button>
+                                <p>By contacting us, you agree to Clonify’s <a href=""><b>Terms and Conditions.</b></a></p>
                             </div>
                         </div>
                     </form>

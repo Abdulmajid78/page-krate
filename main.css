@@ -1103,9 +1103,87 @@ body {
     justify-content: center
 }
 
-.form .container .row form label {
-    color: red;
+.form .container .row form input::placeholder {
+    color: var(--Black-400, #9D9FA1);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/16px/Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
 }
 
+.form .container .row form input {
+    display: flex;
+    height: 52px;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--Black-700, #282828);
+}
+
+.form .container .row form select {
+    display: flex;
+    height: 52px;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-color: black;
+    color: var(--Black-400);
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--Black-700, #282828);
+}
+
+.form .container .row form textarea {
+    display: flex;
+    height: 52px;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--Black-700, #282828);
+}
+
+.form .container .row form input:focus, .form .container .row form textarea:focus, .form .container .row form select:focus {
+    outline: none;
+}
+
+.form .container .row form button {
+    width: 100%;
+    padding: 12px 40px;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    border: none;
+    margin-bottom: 22px;
+}
+
+.form .container .row form p {
+    color: var(--Black-400, #9D9FA1);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text/14px/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
 
 /*end contact page*/

@@ -305,7 +305,7 @@ drawPortfolio()
 // (window.location.pathname === '/page-krate/team.html')
 
 function drawMembers() {
-    const isTeamPage = window.location.pathname === '/page-krate/team.html';
+    const isTeamPage = window.location.pathname.includes('/team.html');
 
     if (isTeamPage) {
         teamInfo.push(
