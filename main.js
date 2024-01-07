@@ -28,42 +28,50 @@ const blogsArr = [
     {
         image: 'images/blogs/blog1.png',
         date: 'October 12, 2024',
-        title: 'How to create SVG-ready icon symbols in Sketch'
+        title: 'How to create SVG-ready icon symbols in Sketch',
+        blogUrl: 'blog-detail.html'
     },
     {
         image: 'images/blogs/blog2.png',
         date: 'October 12, 2024',
-        title: 'Cinema 4D Visual Explorations by David Milan'
+        title: 'Cinema 4D Visual Explorations by David Milan',
+        blogUrl: 'blog-detail.html'
     },
     {
         image: 'images/blogs/blog3.png',
         date: 'October 12, 2024',
-        title: 'Mental models for designers'
+        title: 'Mental models for designers',
+        blogUrl: 'blog-detail.html'
     },
     {
         image: 'images/blogs/blog4.png',
         date: 'October 12, 2024',
-        title: 'How We Keep Brand Consistency in Our Visual Language — A Design System for Illustrations'
+        title: 'How We Keep Brand Consistency in Our Visual Language — A Design System for Illustrations',
+        blogUrl: 'blog-detail.html'
     },
     {
         image: 'images/blogs/blog5.png',
         date: 'October 12, 2024',
-        title: 'Blueprint fidelity: between paper prototype and finished product'
+        title: 'Blueprint fidelity: between paper prototype and finished product',
+        blogUrl: 'blog-detail.html'
     },
     {
         image: 'images/blogs/blog6.png',
         date: 'October 12, 2024',
-        title: 'Introducing: A brand new Dribbble'
+        title: 'Introducing: A brand new Dribbble',
+        blogUrl: 'blog-detail.html'
     },
     {
         image: 'images/blogs/blog7.png',
         date: 'October 12, 2024',
-        title: 'Design critiques at Figma'
+        title: 'Design critiques at Figma',
+        blogUrl: 'blog-detail.html'
     },
     {
         image: 'images/blogs/blog8.png',
         date: 'October 12, 2024',
-        title: '20 psychological principles applied to product design'
+        title: '20 psychological principles applied to product design',
+        blogUrl: 'blog-detail.html'
     },
 
 ]
@@ -316,7 +324,7 @@ drawFooter()
 
 let portfolio = document.querySelector('#portfolio .list-works .row')
 let members = document.querySelector('.team .members')
-let blogSec = document.querySelector('#blogs .blogs .row1')
+let blogSec = document.querySelector('.blogs .row1')
 
 
 function drawPortfolio() {
@@ -416,7 +424,7 @@ function drawBlogs() {
                     <img src="${item.image}" alt="">
                     <p>${item.date}</p>
                     <div class="col-10">
-                        <h2>${item.title}</h2>
+                        <a href="${item.blogUrl}">${item.title}</a>
                     </div>
                 </div>
     `
