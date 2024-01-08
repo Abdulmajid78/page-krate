@@ -59,7 +59,7 @@ b {
 /*start mobile navbar*/
 
 .modal-cust {
-    background-color: rgba(0, 60, 118, 0.5);
+    background-color: rgb(0, 0, 0);
     width: 90%;
     position: absolute;
     top: 50%;
@@ -82,8 +82,10 @@ b {
     font-weight: 600;
     line-height: 24px; /* 171.429% */
     margin-bottom: 12px;
+    padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--Black-700, #282828);
+    border-radius: 15px;
+    border: 1px solid var(--Black-700, #282828);
 }
 
 .modal-cust h6 {
@@ -711,7 +713,7 @@ body {
     align-self: stretch;
 }
 
-.footer-sec .container .row .menu .menu-lower .col-03 h1 {
+.footer-sec .container .row .menu .menu-lower .col-03 a {
     color: var(--Black-300, #BDBDBD);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -898,7 +900,6 @@ body {
 
 #portfolio-detail .recent-works .container .row .second-title .content-2 {
     display: flex;
-    width: 466px;
     padding: 32px;
     justify-content: center;
     align-items: center;

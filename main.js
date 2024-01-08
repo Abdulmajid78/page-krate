@@ -246,7 +246,7 @@ function drawFooter() {
                         </div>
                     </div>
                     <div class="col-02 col-xl-6 col-12">
-                        <a href="mailto:abduaij@mail.com">hello@clonify.io</a>
+                        <a href="mailto:jackodilov@gmail.com">hello@clonify.io</a>
                     </div>
                 </div>
                 <div class="menu-lower col-xl-12">
@@ -263,7 +263,7 @@ function drawFooter() {
                     </div>
                     <div class="col-02 col-xl-4 col-12">
                         <div class="socials">
-                            <a href="">
+                            <a href="https://t.me/abduma2">
                                 <div class="icon-box">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          fill="none">
@@ -273,7 +273,7 @@ function drawFooter() {
                                     </svg>
                                 </div>
                             </a> <!--facebook-->
-                            <a href="">
+                            <a href="https://www.instagram.com/z7777_77z/">
                                 <div class="icon-box">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          fill="none">
@@ -283,7 +283,7 @@ function drawFooter() {
                                     </svg>
                                 </div>
                             </a> <!--instagram-->
-                            <a href="">
+                            <a href="https://www.instagram.com/z7777_77z/">
                                 <div class="icon-box">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          fill="none">
@@ -293,7 +293,7 @@ function drawFooter() {
                                     </svg>
                                 </div>
                             </a> <!--twitter-->
-                            <a href="">
+                            <a href="https://t.me/abduma2">
                                 <div class="icon-box">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          fill="none">
@@ -306,7 +306,7 @@ function drawFooter() {
                         </div>
                     </div>
                     <div class="col-03 col-xl-4 col-12">
-                        <h1>© 2024 Abdulmajid Design</h1>
+                        <a href="https://github.com/Abdulmajid78">© 2024 Abdulmajid Design</a>
                     </div>
                 </div>
             </div>
