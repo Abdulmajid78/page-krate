@@ -7,6 +7,7 @@
     --Black-100: #F2F2F2;
     --White: white;
     --Blue-Black-200: #EAECF0;
+    --Blue-Black-300: #D0D5DD;
 }
 
 * {
@@ -20,6 +21,20 @@
 }
 
 /*start custom classes*/
+
+#main-image {
+    height: 618px;
+    width: 100%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+    #main-image{
+    	background-image: url(images/main-image.png);
+    }
+}
 
 .accordion .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
@@ -44,6 +59,54 @@ b {
     font-weight: bold;
     font-size: 1.3rem;
 }
+
+/*start mobile navbar*/
+
+.modal-cust {
+    background-color: rgba(0, 0, 0, 1);
+    width: 90%;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 16px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.modal-cust a {
+    color: var(--Black-300, #BDBDBD);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Button/XSmall */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 171.429% */
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--Black-700, #282828);
+}
+
+.modal-cust h6 {
+    cursor: pointer;
+    color: var(--Black-400);
+    padding: 14px 0;
+}
+
+.overlay-cust {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+/*mobile navbar*/
 
 /*end custom classes*/
 
@@ -190,7 +253,7 @@ body {
     letter-spacing: -7.5px;
 }
 
-.main-section .container .row .fade > img {
+.main-section .container .row .fade > #main-image {
     margin: 72px auto 40px auto;
     width: 100%;
 }
@@ -945,6 +1008,14 @@ body {
     letter-spacing: -4.5px;
 }
 
+#about-us .main-about .container .row div > img {
+    width: 100%;
+}
+
+.metric .container .row div > img {
+    width: 100%;
+}
+
 .metric .container .row .header h2 {
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -1456,164 +1527,3 @@ body {
 }
 
 /*end term page*/
-
-.modal-cust {
-    background-color: rgba(0, 0, 0, 1);
-    width: 90%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    padding: 16px;
-    border-radius: 24px;
-    text-align: center;
-}
-
-.modal-cust a {
-    color: var(--Black-300, #BDBDBD);
-    font-feature-settings: 'clig' off, 'liga' off;
-
-    /* Button/XSmall */
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px; /* 171.429% */
-    margin-bottom: 12px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--Black-700, #282828);
-}
-
-.modal-cust h6 {
-    cursor: pointer;
-    color: var(--Black-400);
-    padding: 14px 0;
-}
-
-.overlay-cust {
-    position: absolute;
-    z-index: 4;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-
-
-/*mobile */
-
-@media screen and (max-width: 600px) {
-
-    .nav-section {
-        padding: 0 20px;
-    }
-
-    .nav-section .container .row .menu .menu-upper {
-        border: none;
-    }
-
-    .nav-section .container .row .menu .menu-upper .col-02 {
-        margin-left: 70%;
-    }
-
-    .nav-section .container .row .menu .menu-upper div:first-child {
-        display: none;
-    }
-
-    .nav-section .container .row .menu .menu-lower {
-        display: none;
-    }
-
-    .main-section .container .row > h1 {
-        color: var(--White, #FFF);
-        font-feature-settings: 'clig' off, 'liga' off;
-
-        /* Heading/03 */
-        font-family: Inter;
-        font-size: 54px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 63px; /* 116.667% */
-        letter-spacing: -1.5px;
-    }
-
-    .main-section .container .row .paragraph {
-        padding: 120px 0;
-        display: block;
-    }
-
-
-    .main-section .container .row .paragraph div h2 {
-        color: var(--Black-100, #F2F2F2);
-
-        /* Heading/07 */
-        font-size: 22px;
-        font-style: normal;
-        line-height: 32px; /* 140% */
-        padding: 10px 20px;
-        letter-spacing: 0.3px;
-    }
-
-    .cta .container .row {
-        padding: 0 16px;
-    }
-
-    .cta .container .row .background {
-        padding: 80px 56px;
-    }
-
-    .cta .container .row .background h1 {
-        color: #FFF;
-        text-align: center;
-        font-feature-settings: 'clig' off, 'liga' off;
-
-        /* Heading/04 */
-        font-family: Inter;
-        font-size: 42px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 46px; /* 109.524% */
-        letter-spacing: -2px;
-    }
-
-    .cta .container .row .background p {
-        color: #FFF;
-        text-align: center;
-        font-feature-settings: 'clig' off, 'liga' off;
-
-        /* Text/18px/Regular */
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px; /* 166.667% */
-    }
-
-    .footer-sec {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1px;
-        align-self: stretch;
-    }
-
-    .footer-sec .container .row .logo, .footer-sec .container .row .menu .menu-upper .col-01, .footer-sec .container .row .menu .menu-upper .col-02, .footer-sec .container .row .menu .menu-lower .col-01, .footer-sec .container .row .menu .menu-lower .col-02 {
-        border-bottom: 2px solid var(--Black-700, #282828);
-        border-right: 0;
-        padding: 16px 0;
-    }
-
-    .footer-sec .container .row .menu .menu-upper {
-        display: flex;
-        flex-direction: column-reverse;
-        border: none;
-    }
-
-    .footer-sec .container .row .menu .menu-lower {
-        display: block;
-    }
-
-
-}

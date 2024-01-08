@@ -199,6 +199,32 @@ function drawNavbar() {
 }
 
 drawNavbar()
+{ // navbar mobile
+
+    const mq = window.matchMedia("(min-width: 600px)");
+    let hamburger = document.querySelector('.nav-section .menu-upper .col-02 img')
+    let overlayCust = document.querySelector('.overlay-cust')
+    let modalCust = document.querySelector('.modal-cust')
+    let close = document.querySelector('.modal-cust h6')
+
+
+    if (mq.matches) {
+
+    } else {
+        hamburger.addEventListener('click', function () {
+            modalCust.classList.remove('hidden-cust')
+            overlayCust.classList.remove('hidden-cust')
+        })
+        close.addEventListener('click', function () {
+            modalCust.classList.add('hidden-cust')
+            overlayCust.classList.add('hidden-cust')
+        })
+        overlayCust.addEventListener('click', function () {
+            modalCust.classList.add('hidden-cust')
+            overlayCust.classList.add('hidden-cust')
+        })
+    }
+} //navbar mobile
 
 function drawFooter() {
     footer.innerHTML = `
@@ -417,7 +443,7 @@ function drawBlogs() {
         blogsArr.forEach((item) => {
             blogSec.innerHTML += `
                 <div class="col-xl-6 mt-5">
-                    <img src="${item.image}" alt="">
+                    <img class="w-100" src="${item.image}" alt="">
                     <p>${item.date}</p>
                     <div class="col-10">
                         <a href="${item.blogUrl}">${item.title}</a>
@@ -432,30 +458,6 @@ function drawBlogs() {
 
 drawBlogs()
 
-const mq = window.matchMedia("(min-width: 600px)");
-let hamburger = document.querySelector('.nav-section .menu-upper .col-02 img')
-let overlayCust = document.querySelector('.overlay-cust')
-let modalCust = document.querySelector('.modal-cust')
-let close = document.querySelector('.modal-cust h6')
 
-
-if (mq.matches) {
-
-} else {
-    hamburger.addEventListener('click', function () {
-        modalCust.classList.remove('hidden-cust')
-        overlayCust.classList.remove('hidden-cust')
-    })
-
-    close.addEventListener('click', function () {
-        modalCust.classList.add('hidden-cust')
-        overlayCust.classList.add('hidden-cust')
-    })
-
-    overlayCust.addEventListener('click', function () {
-        modalCust.classList.add('hidden-cust')
-        overlayCust.classList.add('hidden-cust')
-    })
-}
 
 
