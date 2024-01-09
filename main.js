@@ -228,7 +228,7 @@ drawNavbar()
 
 function drawFooter() {
     footer.innerHTML = `
-    <div class="container">
+    <div class="container pt-2">
         <div class="row">
             <div class="col-xl-3 col-12 logo">
             <a href="index.html">
