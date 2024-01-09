@@ -60,9 +60,9 @@ b {
 
 .modal-cust {
     background-color: rgb(0, 0, 0);
-    width: 90%;
+    width: 95%;
     position: absolute;
-    top: 50%;
+    top: 150px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -282,7 +282,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5.714px;
-    margin-top: 32px;
+    margin: 32px 0;
 }
 
 

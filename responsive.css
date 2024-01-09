@@ -43,6 +43,16 @@
         background-image: url(images/main-mobile.png);
     }
 
+    .three-logo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .three-logo > div {
+        display: grid;
+        justify-content: center;
+    }
+
 
     .main-section .container .row .paragraph div h2 {
         font-size: 22px;
@@ -284,8 +294,8 @@
     }
 
     #portfolio-detail .recent-works .container .row .text-info {
-    display: block;
-}
+        display: block;
+    }
 
     /* end portfolio detail page*/
 }
